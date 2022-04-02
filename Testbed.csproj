@@ -7,7 +7,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationIcon>Content\Icon.ico</ApplicationIcon>
     <RootNamespace>Playground</RootNamespace>
     <AssemblyName>Playground</AssemblyName>
     <Authors></Authors>
@@ -15,12 +15,10 @@
     <Product />
   </PropertyGroup>
   <ItemGroup>
+    <None Remove=".gitignore" />
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Icon.ico" />
-    <EmbeddedResource Include="Icon.bmp" />
+    <None Remove="README.md" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
